@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #a7d8ff;
+    color: white;
+}
+
+h1 {
+    margin-top: 15px;
+    text-shadow: 2px 2px 3px black;
+}
+
+#boards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 4px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.25);
+    border: 1px solid #ffffff55;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+.hit {
+    background: red !important;
+}
+
+.miss {
+    background: #003b66 !important;
+}
+
+/* islands optional */
+.island {
+    background: rgba(0,0,0,0.2);
+}
